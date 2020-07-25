@@ -1,6 +1,12 @@
 //container class
+var MainDiv = document.createElement('div');
+MainDiv.setAttribute('class','container');
+
 var Div1 = document.createElement('div');
-Div1.setAttribute('class','container');
+var Div2 = document.createElement('div');
+Div2.setAttribute('class','div2');
+
+
 
 //table creation row 1
 var sudokutable = document.createElement('table');
@@ -32,11 +38,13 @@ c2.setAttribute('value','3');
 var cell3 = document.createElement('td');
 var c3 =  document.createElement('input');
 c3.setAttribute('id','c3');
+c3.setAttribute('maxLength','1');
 
 //cell4
 var cell4 = document.createElement('td');
 var c4 =  document.createElement('input');
 c4.setAttribute('id','c4');
+c4.setAttribute('maxLength','1');
 
 //cell5
 var cell5 = document.createElement('td');
@@ -49,21 +57,26 @@ c5.setAttribute('value','7');
 var cell6 = document.createElement('td');
 var c6 =  document.createElement('input');
 c6.setAttribute('id','c6');
+c6.setAttribute('maxLength','1');
 
 //cell7
 var cell7 = document.createElement('td');
 var c7 =  document.createElement('input');
 c7.setAttribute('id','c7');
+c7.setAttribute('maxLength','1');
 
 //cell8
 var cell8 = document.createElement('td');
 var c8 =  document.createElement('input');
 c8.setAttribute('id','c8');
+c8.setAttribute('maxLength','1');
 
 //cell9
 var cell9 = document.createElement('td');
 var c9 =  document.createElement('input');
 c9.setAttribute('id','c9');
+c9.setAttribute('maxLength','1');
+
 //<----------row1 cell creation end------------->
 
 
@@ -78,11 +91,13 @@ c10.setAttribute('value','6');
 var cell11 = document.createElement('td');
 var c11 =  document.createElement('input');
 c11.setAttribute('id','c11');
+c11.setAttribute('maxLength','1');
 
 //cell12
 var cell12 = document.createElement('td');
 var c12 =  document.createElement('input');
 c12.setAttribute('id','c12');
+c12.setAttribute('maxLength','1');
 
 //cell13
 var cell13 = document.createElement('td');
@@ -109,16 +124,20 @@ c15.setAttribute('value','5');
 var cell16 = document.createElement('td');
 var c16 =  document.createElement('input');
 c16.setAttribute('id','c16');
+c16.setAttribute('maxLength','1');
 
 //cell17
 var cell17 = document.createElement('td');
 var c17 =  document.createElement('input');
 c17.setAttribute('id','c17');
+c17.setAttribute('maxLength','1');
 
 //cell11
 var cell18 = document.createElement('td');
 var c18 =  document.createElement('input');
 c18.setAttribute('id','c18');
+c18.setAttribute('maxLength','1');
+
 //<----------row2 cell creation end------------->
 
 
@@ -126,6 +145,7 @@ c18.setAttribute('id','c18');
 var cell19 = document.createElement('td');
 var c19 =  document.createElement('input');
 c19.setAttribute('id','c19');
+c19.setAttribute('maxLength','1');
 
 //cell20
 var cell20 = document.createElement('td');
@@ -145,21 +165,25 @@ c21.setAttribute('value','8');
 var cell22 = document.createElement('td');
 var c22 =  document.createElement('input');
 c22.setAttribute('id','c22');
+c22.setAttribute('maxLength','1');
 
 //cell23
 var cell23 = document.createElement('td');
 var c23 =  document.createElement('input');
 c23.setAttribute('id','c23');
+c23.setAttribute('maxLength','1');
 
 //cell24
 var cell24 = document.createElement('td');
 var c24 =  document.createElement('input');
 c24.setAttribute('id','c24');
+c24.setAttribute('maxLength','1');
 
 //cell25
 var cell25 = document.createElement('td');
 var c25 =  document.createElement('input');
 c25.setAttribute('id','c25');
+c25.setAttribute('maxLength','1');
 
 //cell26
 var cell26 = document.createElement('td');
@@ -172,6 +196,8 @@ c26.setAttribute('value','6');
 var cell27 = document.createElement('td');
 var c27 =  document.createElement('input');
 c27.setAttribute('id','c27');
+c27.setAttribute('maxLength','1');
+
 //<----------row3 cell creation end------------->
 
 //<----------row4 cell creation begin------------->
@@ -185,16 +211,19 @@ c28.setAttribute('value','8');
 var cell29 = document.createElement('td');
 var c29 =  document.createElement('input');
 c29.setAttribute('id','c29');
+c29.setAttribute('maxLength','1');
 
 //cell30
 var cell30 = document.createElement('td');
 var c30 =  document.createElement('input');
 c30.setAttribute('id','c30');
+c30.setAttribute('maxLength','1');
 
 //cell31
 var cell31 = document.createElement('td');
 var c31 =  document.createElement('input');
 c31.setAttribute('id','c31');
+c31.setAttribute('maxLength','1');
 
 //cell32
 var cell32 = document.createElement('td');
@@ -207,16 +236,19 @@ c32.setAttribute('value','6');
 var cell33 = document.createElement('td');
 var c33 =  document.createElement('input');
 c33.setAttribute('id','c33');
+c33.setAttribute('maxLength','1');
 
 //cell34
 var cell34 = document.createElement('td');
 var c34 =  document.createElement('input');
 c34.setAttribute('id','c34');
+c34.setAttribute('maxLength','1');
 
 //cell35
 var cell35 = document.createElement('td');
 var c35 =  document.createElement('input');
 c35.setAttribute('id','c35');
+c35.setAttribute('maxLength','1');
 
 //cell36
 var cell36 = document.createElement('td');
@@ -238,11 +270,13 @@ c37.setAttribute('value','4');
 var cell38 = document.createElement('td');
 var c38 =  document.createElement('input');
 c38.setAttribute('id','c38');
+c38.setAttribute('maxLength','1');
 
 //cell39
 var cell39 = document.createElement('td');
 var c39 =  document.createElement('input');
 c39.setAttribute('id','c39');
+c39.setAttribute('maxLength','1');
 
 //cell40
 var cell40 = document.createElement('td');
@@ -250,11 +284,13 @@ var c40 =  document.createElement('input');
 c40.setAttribute('id','c40');
 c40.setAttribute('disabled','disabled');
 c40.setAttribute('value','8');
+c40.setAttribute('maxLength','1');
 
 //cell41
 var cell41 = document.createElement('td');
 var c41 =  document.createElement('input');
 c41.setAttribute('id','c41');
+c41.setAttribute('maxLength','1');
 
 //cell42
 var cell42 = document.createElement('td');
@@ -267,11 +303,13 @@ c42.setAttribute('value','3');
 var cell43 = document.createElement('td');
 var c43 =  document.createElement('input');
 c43.setAttribute('id','c43');
+c43.setAttribute('maxLength','1');
 
 //cell44
 var cell44 = document.createElement('td');
 var c44 =  document.createElement('input');
 c44.setAttribute('id','c44');
+c44.setAttribute('maxLength','1');
 
 //cell45
 var cell45 = document.createElement('td');
@@ -292,16 +330,19 @@ c46.setAttribute('value','7');
 var cell47 = document.createElement('td');
 var c47 =  document.createElement('input');
 c47.setAttribute('id','c47');
+c47.setAttribute('maxLength','1');
 
 //cell48
 var cell48 = document.createElement('td');
 var c48 =  document.createElement('input');
 c48.setAttribute('id','c48');
+c48.setAttribute('maxLength','1');
 
 //cell49
 var cell49 = document.createElement('td');
 var c49 =  document.createElement('input');
 c49.setAttribute('id','c49');
+c49.setAttribute('maxLength','1');
 
 //cell50
 var cell50 = document.createElement('td');
@@ -314,16 +355,19 @@ c50.setAttribute('value','2');
 var cell51 = document.createElement('td');
 var c51 =  document.createElement('input');
 c51.setAttribute('id','c51');
+c51.setAttribute('maxLength','1');
 
 //cell52
 var cell52 = document.createElement('td');
 var c52 =  document.createElement('input');
 c52.setAttribute('id','c52');
+c52.setAttribute('maxLength','1');
 
 //cell53
 var cell53 = document.createElement('td');
 var c53 =  document.createElement('input');
 c53.setAttribute('id','c53');
+c53.setAttribute('maxLength','1');
 
 //cell54
 var cell54 = document.createElement('td');
@@ -338,6 +382,7 @@ c54.setAttribute('value','6');
 var cell55 = document.createElement('td');
 var c55 =  document.createElement('input');
 c55.setAttribute('id','c55');
+c55.setAttribute('maxLength','1');
 
 //cell56
 var cell56 = document.createElement('td');
@@ -350,21 +395,25 @@ c56.setAttribute('value','6');
 var cell57 = document.createElement('td');
 var c57 =  document.createElement('input');
 c57.setAttribute('id','c57');
+c57.setAttribute('maxLength','1');
 
 //cell58
 var cell58 = document.createElement('td');
 var c58 =  document.createElement('input');
 c58.setAttribute('id','c58');
+c58.setAttribute('maxLength','1');
 
 //cell59
 var cell59 = document.createElement('td');
 var c59 =  document.createElement('input');
 c59.setAttribute('id','c59');
+c59.setAttribute('maxLength','1');
 
 //cell60
 var cell60 = document.createElement('td');
 var c60 =  document.createElement('input');
 c60.setAttribute('id','c60');
+c60.setAttribute('maxLength','1');
 
 //cell61
 var cell61 = document.createElement('td');
@@ -384,22 +433,27 @@ c62.setAttribute('value','8');
 var cell63 = document.createElement('td');
 var c63 =  document.createElement('input');
 c63.setAttribute('id','c63');
+c63.setAttribute('maxLength','1');
+
 //<----------row7 cell creation end------------->
 
 //<----------row8 cell creation begin------------->
 var cell64 = document.createElement('td');
 var c64 =  document.createElement('input');
 c64.setAttribute('id','c64');
+c64.setAttribute('maxLength','1');
 
 //cell65
 var cell65 = document.createElement('td');
 var c65 =  document.createElement('input');
 c65.setAttribute('id','c65');
+c65.setAttribute('maxLength','1');
 
 //cell66
 var cell66 = document.createElement('td');
 var c66 =  document.createElement('input');
 c66.setAttribute('id','c66');
+c66.setAttribute('maxLength','1');
 
 //cell67
 var cell67 = document.createElement('td');
@@ -426,11 +480,13 @@ c69.setAttribute('value','9');
 var cell70 = document.createElement('td');
 var c70 =  document.createElement('input');
 c70.setAttribute('id','c70');
+c70.setAttribute('maxLength','1');
 
 //cell71
 var cell71 = document.createElement('td');
 var c71 =  document.createElement('input');
 c71.setAttribute('id','c71');
+c71.setAttribute('maxLength','1');
 
 //cell72
 var cell72 = document.createElement('td');
@@ -444,21 +500,25 @@ c72.setAttribute('value','5');
 var cell73 = document.createElement('td');
 var c73 =  document.createElement('input');
 c73.setAttribute('id','c73');
+c73.setAttribute('maxLength','1');
 
 //cell74
 var cell74 = document.createElement('td');
 var c74 =  document.createElement('input');
 c74.setAttribute('id','c74');
+c74.setAttribute('maxLength','1');
 
 //cell75
 var cell75 = document.createElement('td');
 var c75 =  document.createElement('input');
 c75.setAttribute('id','c75');
+c75.setAttribute('maxLength','1');
 
 //cell76
 var cell76 = document.createElement('td');
 var c76 =  document.createElement('input');
 c76.setAttribute('id','c76');
+c76.setAttribute('maxLength','1');
 
 //cell77
 var cell77 = document.createElement('td');
@@ -471,11 +531,13 @@ c77.setAttribute('value','8');
 var cell78 = document.createElement('td');
 var c78 =  document.createElement('input');
 c78.setAttribute('id','c78');
+c78.setAttribute('maxLength','1');
 
 //cell79
 var cell79 = document.createElement('td');
 var c79 =  document.createElement('input');
 c79.setAttribute('id','c79');
+c79.setAttribute('maxLength','1');
 
 //cell80
 var cell80 = document.createElement('td');
@@ -817,6 +879,65 @@ cell81.appendChild(c81);
 row9.appendChild(cell81);
 sudokutable.append(row9);
 
+//Breaks
+var break1 = document.createElement('br');
+
+//Buttons
+var start = document.createElement('button');
+start.innerHTML="Start";
+start.addEventListener('click', function(){
+    setInterval(updateTimer,1000);
+});
+
+//counter
+var counter = document.createElement('p');
+counter.innerHTML="4:00"
+
+//resetting page
+var reset = document.createElement('button');
+reset.innerHTML="Reset";
+reset.addEventListener('click',function()
+{
+window.location.reload()
+});
+
 //Display
 Div1.append(sudokutable);
-document.body.append(Div1);
+Div2.append(start,counter,reset);
+MainDiv.append(Div1,Div2);
+document.body.append(MainDiv);
+
+
+
+
+//updateTimer
+let timer = 4 * 60;
+function updateTimer(){
+    let minutes = Math.floor(timer/60);
+    let seconds = timer % 60;
+    seconds = seconds <10 ? '0' + seconds : seconds;
+    counter.innerHTML=`${minutes}:${seconds}`;
+    timer--;
+}
+
+
+//sudokuSolving
+var initialBoard = [
+    [5,3,0,0,7,0,0,0,0],
+    [6,0,0,1,9,5,0,0,0],
+    [0,9,8,0,0,0,0,6,0],
+    [8,0,0,0,6,0,0,0,3],
+    [4,0,0,8,0,3,0,0,1],
+    [7,0,0,0,2,0,0,0,6],
+    [0,6,0,0,0,0,2,8,0],
+    [0,0,0,4,1,9,0,0,5],
+    [0,0,0,0,8,0,0,7,9]
+]
+
+function solveSudoku(answers){
+    for(var i=0;i<9;i++){
+        for(var j=0;j<9;j++){
+            
+        }
+    }
+}

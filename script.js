@@ -895,7 +895,8 @@ start.addEventListener('click', function(){
 });
 
 //updateTimer
-let timer = 0.05 * 60;
+var totalTime = 4 * 60;
+var timer = totalTime;
 function updateTimer(){
     let minutes = Math.floor(timer/60);
     let seconds = timer % 60;
@@ -908,7 +909,16 @@ function updateTimer(){
         userSudoku();
     }
 }
+//calcuating score
+function getScore(){
+    var points;
 
+    var diff = totalTime-timer;
+    var x = (totalTime-diff);
+    points = 100 - (x*0.01);
+    points = (Math.round(Math.max(points, 0)));
+    return points;
+}
 
 //counter
 var counter = document.createElement('p');
@@ -917,14 +927,25 @@ counter.innerHTML="4:00";
 //resetting page
 var reset = document.createElement('button');
 reset.innerHTML="Reset";
+reset.setAttribute('class','red');
 reset.addEventListener('click',function()
 {
 window.location.reload();
 });
 
+//submit
+var submit = document.createElement('button');
+submit.innerHTML="Submit";
+submit.setAttribute('class','green');
+submit.addEventListener('click',function(){
+        clearInterval(timerId);
+        userSudoku();
+        getScore();
+})
+
 //Display
 Div1.append(sudokutable);
-Div2.append(start,counter,reset);
+Div2.append(start,reset,submit,counter);
 MainDiv.append(heading);
 MainDiv.append(Div1);
 MainDiv.append(Div2);
@@ -965,17 +986,20 @@ function userSudoku(){
         }
     }
   // return validatedUserBoard;
-  if(valid(userBoard)==true&&count==0)
-  heading.innerHTML="Hola! You won";
+  if(valid(userBoard)==true&&count==0){
+    heading.innerHTML="Hola! You won. Your Score: "+getScore();
+  }
+  
   //alert("Valid Sudoku");
   else if(count>0)
-  heading.innerHTML="Lost! Try to fill all fields";
+  heading.innerHTML="Lost! Try to fill all fields, Your Score is 0";
   else
   heading.innerHTML="You Lost! Try Again";
   //alert("Invalid Sudoku");
 }
 
 var count=0;
+var flag=0;
 //validatingUserBoard
 function valid(input) {
     for (var r = 0; r < 9; ++r) {
@@ -1008,6 +1032,7 @@ function valid(input) {
             }
         }
     }
+    flag++;
     return true;
 }
 

@@ -895,7 +895,7 @@ start.addEventListener('click', function(){
 });
 
 //updateTimer
-let timer = 4 * 60;
+let timer = 0.05 * 60;
 function updateTimer(){
     let minutes = Math.floor(timer/60);
     let seconds = timer % 60;
@@ -912,14 +912,14 @@ function updateTimer(){
 
 //counter
 var counter = document.createElement('p');
-counter.innerText="4:00"
+counter.innerHTML="4:00";
 
 //resetting page
 var reset = document.createElement('button');
 reset.innerHTML="Reset";
 reset.addEventListener('click',function()
 {
-window.location.reload()
+window.location.reload();
 });
 
 //Display
@@ -929,10 +929,6 @@ MainDiv.append(heading);
 MainDiv.append(Div1);
 MainDiv.append(Div2);
 document.body.append(MainDiv);
-
-
-
-
 
 
 //sudokuSolving
@@ -969,11 +965,18 @@ function userSudoku(){
         }
     }
   // return validatedUserBoard;
-  console.log(valid(userBoard));
-
+  if(valid(userBoard)==true&&count==0)
+  heading.innerHTML="Hola! You won";
+  //alert("Valid Sudoku");
+  else if(count>0)
+  heading.innerHTML="Lost! Try to fill all fields";
+  else
+  heading.innerHTML="You Lost! Try Again";
+  //alert("Invalid Sudoku");
 }
 
-//validation
+var count=0;
+//validatingUserBoard
 function valid(input) {
     for (var r = 0; r < 9; ++r) {
         for (var c = 0; c < 9; ++c) {
@@ -998,6 +1001,10 @@ function valid(input) {
                         }
                     }
                 }
+            }
+            else if(!value)
+            {
+                count++;
             }
         }
     }

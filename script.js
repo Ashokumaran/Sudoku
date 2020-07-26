@@ -2,7 +2,11 @@
 var MainDiv = document.createElement('div');
 MainDiv.setAttribute('class','container');
 
+var heading = document.createElement('span');
+heading.innerText="SUDOKU"
+
 var Div1 = document.createElement('div');
+Div1.setAttribute('class','div1');
 var Div2 = document.createElement('div');
 Div2.setAttribute('class','div2');
 
@@ -891,7 +895,7 @@ start.addEventListener('click', function(){
 });
 
 //updateTimer
-let timer = 0.1 * 60;
+let timer = 4 * 60;
 function updateTimer(){
     let minutes = Math.floor(timer/60);
     let seconds = timer % 60;
@@ -921,7 +925,9 @@ window.location.reload()
 //Display
 Div1.append(sudokutable);
 Div2.append(start,counter,reset);
-MainDiv.append(Div1,Div2);
+MainDiv.append(heading);
+MainDiv.append(Div1);
+MainDiv.append(Div2);
 document.body.append(MainDiv);
 
 
